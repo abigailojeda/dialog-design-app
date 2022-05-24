@@ -1,48 +1,43 @@
-# readme-templates
+# PROJECT
 
->Templates para empezar a trabjar con de forma rápida utilizando los standar de common-readme. Estos se aplican en [nuwe.io](https://nuwe.io)
+dialog-design-system:
 
-## Background
+Ventanas de diálogo para alerta, error o mensaje de éxito
+Llevado a cabo con React, utilizando useState
 
-Para facilitar la creación de documentación y el análisis de esta através de un markdown parser se ha creado esta libreria de *templates* de README. 
 
-De esta forma nos aseguramos la estandarización y la calidad de la documentación generada en nuestros retos.
+## Background | Not using the common-readme | Not required
 
-## Usage
-
-Simplente clonar y rellenar cada uno de las secciones con la info que se pide.
+Este proyecto lo he creado para practicar el desarrollo de aplicaciones con React, 
+además de seguir un reto frontend planteado en [nuwe](https://nuwe.io/challenges)
 
 ## Installation
 
-```shell
-    # Clone or install commands
-    npm clone https://github.com/nuwe-io/readme-templates
-```
+Dirigirse a la carpeta web, y dentro de esta a la carpeta dialog-design-app
+cd web
+cd dialog-design-app
 
-## Reconocimientos 
+Instalar proyecto React:
+npm i
 
-- [The art of readme](https://github.com/hackergrrl/art-of-readme)
-- [common-readme](https://github.com/hackergrrl/common-readme)
+Levantar proyecto:
+npm start
+
+## Stack
+
+Stack tecnológico utilizado:
+
+React
+Sass
+HTML
 
 
-## See more
+## Contact info | Not using the common-readme | Not required  | Recommended
 
-Algunos links the licéncias Open source para copiar y pegar:
+ [LinkedIn](https://www.linkedin.com/in/abigail-ojeda)
 
-- [Apache License 2.0](https://opensource.org/licenses/Apache-2.0)
-- [BSD 3-Clause "New" or "Revised" license](https://opensource.org/licenses/BSD-3-Clause)
-- [BSD 2-Clause "Simplified" or "FreeBSD" license](https://opensource.org/licenses/BSD-2-Clause)
-- [GNU General Public License (GPL)](https://opensource.org/licenses/gpl-license)
-- [GNU Library or "Lesser" General Public License (LGPL)](https://opensource.org/licenses/lgpl-license)
-- [MIT](https://opensource.org/licenses/MIT)
-- [Mozilla Public License 2.0](https://opensource.org/licenses/MPL-2.0)
-- [Common Development and Distribution License](https://opensource.org/licenses/CDDL-1.0)
-- [Eclipse Public License version 2.0](https://opensource.org/licenses/EPL-2.0)
 
-## Contact info
-
-> hello@nuwe.io || Edgar Gago Carrillo
-
-## License
+## License 
 
 [MIT](https://opensource.org/licenses/MIT)
+

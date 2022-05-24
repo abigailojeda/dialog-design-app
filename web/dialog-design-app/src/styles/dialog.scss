@@ -1,0 +1,196 @@
+@import './settings.scss';
+
+.show{
+    display: flex;
+}
+.hidden{
+    display: none;
+}
+
+.dialog-cont{
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(43, 42, 44, 0.596);
+
+ 
+    .dialog{
+        width: 380px;
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        // -webkit-box-shadow: 0px 0px 8px 0px rgba(214,210,214,1);
+        // -moz-box-shadow: 0px 0px 8px 0px rgba(214,210,214,1);
+        // box-shadow: 0px 0px 8px 0px rgba(214,210,214,1);
+        border-radius: 8px;
+        position: relative;
+
+
+        .dialog-close{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            right: 0.6em;
+            top: 0.6em;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: $violet;
+            color: #fff;
+            cursor: pointer;
+
+            &:hover{
+                background-color: lighten( $violet, 5%);
+            }
+        }
+
+        .dialog-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .dialog-icon{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                border-radius: 50%;
+                width: 80px;
+                height: 80px;
+                font-size: 35px;
+                &.alert{
+                    background-color: lighten($yellow, 42%);
+                    color: $yellow;
+                }
+
+                &.succes{
+                    background-color: lighten($green, 52%);
+                    color: $green;
+                }
+
+                &.error{
+                    background-color: lighten($red, 48%);
+                    color: $red;
+                }
+            } 
+
+          
+
+            .dialog-title{
+                font-size: 30px;
+                margin-top: 0.6em;
+            }
+            .dialog-subtitle{
+                font-size: 15px;
+                margin-top: 0.6em;
+                font-weight: 500;
+            }
+        
+
+            .dialog-btn-cont{
+                margin-top: 1.5em;
+                height: 40px;
+                display:flex;
+
+                .action-btn{
+                    background-color: $violet;
+                    color: #fff;
+                    padding: 0.5em 1em;
+                    border: 2px solid $violet;
+                    border-radius: 5px;
+                    margin: 0 0.5em;
+                    cursor: pointer;
+
+                    &:hover{
+                        background-color: lighten( $violet, 5%);
+                    }
+                }
+
+                .cancel-btn{
+                    border: 2px solid $violet;
+                    color: $violet;
+                    padding: 0.5em 1em;
+                    border-radius: 5px;
+                    margin: 0 0.25em;
+                    cursor: pointer;
+
+                    &:hover{
+                        border: 2px solid lighten( $violet, 15%);
+                        color: lighten( $violet, 15%);
+                        
+                    }
+                }
+            }
+
+        }
+
+        
+        
+    }
+}
+
+
+.message-cont{
+
+    width: 360px;
+    margin: auto;
+    position: relative;
+    padding: 1em;
+    border-radius: 8px;
+    margin-top: 2em;
+
+    &.delete{
+        background-color: $blue-message;
+    }
+
+    h3{
+       font-size: 18px;
+       text-align: center;
+       color: darken($blue-message, 25%);
+    }
+
+    .message-close{
+        position: absolute;
+        right: -45px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        background-color: $violet;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover{
+            background-color: lighten( $violet, 5%);
+        }
+
+        h6{
+            color:#fff;
+            font-weight: 400;
+        }
+    }
+}
+
+@media screen and (max-width:520px){
+   
+    .message-cont{
+        width: 260px;
+    }
+}
+@media screen and (max-width:400px){
+   
+    .message-cont{
+        width: 160px;
+    }
+}

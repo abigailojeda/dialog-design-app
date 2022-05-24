@@ -1,0 +1,49 @@
+@import './settings.scss';
+
+.title{
+    text-align: center;
+    margin-top: 8em;
+}
+.buttons-cont{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2em;
+    .btn{
+        display: block;
+        cursor: pointer;
+        padding: 1em 0;
+        width: 200px;
+        text-align: center;
+        font-weight: bolder;
+        border-radius: 8px;
+        margin: 1em;
+
+        &.alert{
+            background-color: lighten($yellow, 42%);
+            color: $yellow;
+            &:hover{
+                background-color: lighten($yellow, 43%);
+            }
+        }
+        &.succes{
+            background-color: lighten($green, 52%);
+            color: $green;
+            &:hover{
+                background-color: lighten($green, 55%);
+            }
+        }
+        &.error{
+            background-color: lighten($red, 48%);
+            color: $red;
+            &:hover{
+                background-color: lighten($red, 49%);
+            }
+        }
+
+        &:hover{
+            transform: scale(1.12);
+        }
+    }
+}
